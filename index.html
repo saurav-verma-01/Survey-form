@@ -3,7 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
     <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <h1 id="title">freeCodeCamp Survey Form</h1>
@@ -12,7 +21,7 @@
     </p>
 
     <form action="#" id="survey-form">
-      <fieldset>
+      <fieldset id="general">
         <label for="name" id="name-label"
           >Full Name
           <input required type="text" id="name" placeholder="John Doe" />
@@ -46,8 +55,8 @@
           </select>
         </label>
       </fieldset>
-      <fieldset>
-        Which option best describes your current role?
+      <fieldset id="recommendation">
+        <legend>Would you recommend freeCodeCamp to a friend?</legend>
         <label for="definitely">
           <input type="radio" name="refer" id="definitely" value="definitely" />
           Definitely
@@ -61,8 +70,8 @@
         </label>
       </fieldset>
 
-      <fieldset>
-        What would you like to see improved?
+      <fieldset id="improvements">
+        <legend>What would you like to see improved?</legend>
         <label for="front-end-projects">
           <input
             type="checkbox"
